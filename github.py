@@ -17,3 +17,4 @@ def get_github_user(username):
 if __name__ == "__main__":
     username = input("Enter GitHub username: ")
     get_github_user(username)
+print('info')
