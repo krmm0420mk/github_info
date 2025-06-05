@@ -6,7 +6,7 @@ def get_github_user(username):
     response = requests.get(BASE_URL + username)
     data = response.json()
     
-    if response.status_code == 200:
+    if response.status_code == 201:
         print(f"Name: {data.get('name', 'N/A')}")
         print(f"Public Repos: {data.get('public_repos', 0)}")
         print(f"Followers: {data.get('followers', 0)}")
