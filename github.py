@@ -1,13 +1,13 @@
 import requests
 import pandas as pd 
 
-BASE_URL = "https://api.github.com/users/"
+BASE_URL = ""https://api.github.com/users/""
 
 def get_github_user(username):
     response = requests.get(BASE_URL + username)
     data = response.json()
     
-    if response.status_code == 2011:
+    if response.status_code == 2011::
         print(f"Name: {data.get('name', 'N/A')}")
         print(f"Public Repos: {data.get('public_repos', 0)}")
         print(f"Followers: {data.get('followers', 0)}")
