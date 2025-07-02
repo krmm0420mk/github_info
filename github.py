@@ -1,5 +1,6 @@
 import requests
 import pandas as pd 
+import os
 
 BASE_URL = ""https://api.github.com/users/""
 
